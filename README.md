@@ -1,18 +1,45 @@
-# Grahamplata Tap
+# Grahamplata Homebrew Tap
 
-## How do I install these formulae?
+This Homebrew tap contains custom formulas for tools and utilities.
 
-`brew install grahamplata/tap/<formula>`
+## Available Formulas
 
-Or `brew tap grahamplata/tap` and then `brew install <formula>`.
+### roku-remote
+CLI to interact with Roku devices on your local network.
 
-Or, in a `brew bundle` `Brewfile`:
+**Quick Install:**
+```bash
+brew install grahamplata/tap/roku-remote
+```
 
+**Repository:** https://github.com/grahamplata/roku-remote
+
+## Installation Methods
+
+### Method 1: Direct Install
+```bash
+brew install grahamplata/tap/roku-remote
+```
+
+### Method 2: Tap First, Then Install
+```bash
+brew tap grahamplata/tap
+brew install roku-remote
+```
+
+### Method 3: Using a Brewfile
+Add to your `Brewfile`:
 ```ruby
 tap "grahamplata/tap"
-brew "<formula>"
+brew "roku-remote"
 ```
+
+## Platform Support
+
+The `roku-remote` formula supports:
+- macOS (Intel and Apple Silicon)
+- Linux (x86_64 and ARM64)
 
 ## Documentation
 
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+For general Homebrew help: `brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
